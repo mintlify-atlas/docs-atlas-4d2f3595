@@ -1,0 +1,116 @@
+{
+  "projectType": "saas",
+  "projectName": "Claudex",
+  "projectDescription": "Self-hosted Claude Code workspace with multi-provider routing, sandboxed execution, and a full web IDE.",
+  "theme": "palm",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Installation",
+            "pages": [
+              "installation/web",
+              "installation/desktop",
+              "installation/deployment"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/workspaces",
+              "concepts/providers",
+              "concepts/sandboxes"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/chat",
+              "features/extensions",
+              "features/web-ide",
+              "features/checkpoints"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/providers",
+              "configuration/mcp-servers",
+              "configuration/environment"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/workspaces",
+              "api/chats",
+              "api/messages",
+              "api/sandboxes",
+              "api/providers",
+              "api/extensions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Claude Code execution through claude-agent-sdk",
+    "Multi-provider support (Anthropic, OpenAI, GitHub Copilot, OpenRouter)",
+    "Anthropic Bridge for non-Anthropic providers",
+    "Workspace-based project organization",
+    "Docker and host sandbox isolation",
+    "MCP servers, skills, agents, and slash commands",
+    "Checkpoint restore and chat forking",
+    "Built-in web IDE with VS Code, terminal, and VNC",
+    "Streaming SSE architecture",
+    "Desktop app for macOS"
+  ],
+  "publicApiSurface": [
+    "POST /api/v1/workspaces",
+    "GET /api/v1/workspaces",
+    "POST /api/v1/chats",
+    "GET /api/v1/chats",
+    "POST /api/v1/chats/{id}/messages",
+    "GET /api/v1/chats/{id}/messages",
+    "POST /api/v1/chats/{id}/stream",
+    "POST /api/v1/chats/{id}/fork",
+    "GET /api/v1/sandboxes",
+    "POST /api/v1/sandboxes",
+    "GET /api/v1/providers",
+    "POST /api/v1/providers",
+    "GET /api/v1/agents",
+    "POST /api/v1/agents",
+    "GET /api/v1/skills",
+    "POST /api/v1/skills",
+    "GET /api/v1/commands",
+    "POST /api/v1/commands",
+    "GET /api/v1/mcps",
+    "POST /api/v1/mcps"
+  ]
+}
